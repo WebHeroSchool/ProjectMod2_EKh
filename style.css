@@ -1,0 +1,17 @@
+body {
+  font-family: 'Gotham Pro';
+	font-size: 14px;
+	padding: 24.13px 70px 0px 70px;
+	margin: 0;
+	max-width: 1170px;
+	min-width: 320px;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+header a {
+  font-weight: bold;
+}
