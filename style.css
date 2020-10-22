@@ -72,7 +72,7 @@ nav a, .header__link {
 
 .burger {display: none;}
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 	.header {
 		margin: 0 44px;
 		max-height: 113.54px;
@@ -89,6 +89,21 @@ nav a, .header__link {
 	.burger {display: block;}
 	.header__logo {display: none;}
 	.header__logo-mobile {display: block;}
+}
+
+@media (max-width: 376px) {
+	.header {
+		margin: 0 47px;
+		max-height: 72px;
+	}
+	
+	.burger__item {
+		width: 41px;
+  	height: 5px;
+  	margin: 0 0 5px 0;
+	}
+
+	.header__logo-mobile {height: 22px;}
 }
 
 /*MAIN <section class='main-screen'>*/
@@ -129,7 +144,7 @@ nav a, .header__link {
 	margin-left: 6.29px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 	.main-screen {
 		background-image: url(Image_Axion/Photo/rob-potter-422534-unsplash_ipad.png);
 		height: 415px;
@@ -140,9 +155,27 @@ nav a, .header__link {
 		font-size: 50px;
 		margin-bottom: 36px;
 	}
+
 	.main-screen__link {font-size: 20px;}
 }
 
+@media (max-width: 376px) {
+	.main-screen {
+		height: 191px;
+		margin: 0 0 38px 0;
+	}
+
+	.main-screen__container {
+		padding-left: 48px;
+	}
+
+	.main-screen__title {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.main-screen__link {font-size: 12px;}
+}
 /*MAIN section class='goods-list'*/
 
 .goods-list {margin: 0 0 26px 0;}
@@ -163,15 +196,17 @@ nav a, .header__link {
 .goods__item {
 	padding: 0 12px 20px;
 	height: 261px;
+	position: relative;
 }
 
-.goods__item::after {
+.goods__item:nth-child(n+2)::before {
 	content: url('Image_Axion/Vector/Vector (1).png');
-	display: inline-flex;
+	display: inline-block;
+	position: absolute;
 	width: 0;
-	height: 100.18px;
-	border: 1px
-	margin-left: 18px;
+	height: 101px;
+	border: 1px;
+	margin: 40px 0 0 -40px;
 }
 
 .goods__img {margin: 0 0 24px 0;}
@@ -187,7 +222,7 @@ nav a, .header__link {
 	align-items: center
 }
 
-.goods__price {	font-weight: bold;}
+.goods__price {font-weight: bold;}
 
 .goods__colors {
 	display: flex;
@@ -213,7 +248,7 @@ nav a, .header__link {
 .goods__color_orange {background: #E29D69;}
 .goods__color_blue {background: #257DA9;}
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 	.goods-list {margin: 0 70px 60px 70px;}
 
 	.content__title {
@@ -226,13 +261,9 @@ nav a, .header__link {
 		padding: 0 15px 0px;
 	}
 
-	.goods__item:nth-last-child(1), .goods__item:nth-last-child(2) {
-		display: none;
-	}
+	.goods__item:nth-last-child(1), .goods__item:nth-last-child(2) {display: none;}
 
-	.goods__img {
-		height: 233px;
-	}
+	.goods__img {height: 233px;}
 
 	.goods__name {
 		font-size: 20px;
@@ -249,7 +280,51 @@ nav a, .header__link {
 		height: 20px;
 		margin-right: 5px;
 	}
-	.goods__item::after {display: none;}
+	
+	.goods__color_grey-changed {order: 3;}
+	.goods__color_black-changed {order: 2;}
+	.goods__color_red-changed {order: 1;}
+	.goods__color_yellow-changed {order: 4;}
+	
+	.goods__item:nth-child(n+2)::before {display: none;}
+}
+
+@media (max-width: 376px) {
+	.goods-list {margin: 0 47px 80px 47px;}
+
+	.content__title {
+		font-size: 20px;
+		margin: 0;
+	}
+	
+	.goods__item {
+		height: 248px;
+		width: 281px;
+		padding: 0 0 0 14px;		
+	}
+
+	.goods__item:nth-last-child(3) {display: none;}
+
+	.goods__img {
+		height: 165px;
+		padding:0 50px 0;
+	}
+
+	.goods__name {
+		font-size: 15px;
+		margin: 0;
+	}
+
+	.goods__details {
+		height: 32px;
+		font-size: 20px;
+	}
+
+	.goods__color, .goods__color_active {
+		width: 15px;
+		height: 15px;
+		margin-right: 5px;
+	}
 }
 
 /*MAIN <section class='brand-info'>*/
@@ -325,7 +400,10 @@ nav a, .header__link {
 		align-items: center;
 	}
 
-	.brand-info__title {line-height: 27px;}
+	.brand-info__title {
+		line-height: 27px;
+		text-align: center;
+}
 
 	.brand-info__history {
 		text-align: center;
@@ -334,4 +412,36 @@ nav a, .header__link {
 	}
 
 	.brand-info__link {display: none;}
+}
+
+@media (max-width: 376px) {
+	.brand-info {
+		padding: 10px 45px 50px 45px;
+		height: 400px;
+	}
+
+	.brand-info:before {
+	  content: "";
+	  width: 110%;
+	  left: -5%;
+	}
+
+	.brand-info__image {
+		padding: 0;
+		height: 151px;
+		border: 4px;
+		flex: 0 1 auto;
+	}
+
+	.brand-info__text {padding: 0 0 20px 0;}
+
+	.brand-info__title {
+		line-height: 25px;
+		margin-bottom: 15px;
+	}
+
+	.brand-info__history {
+		font-size: 14px;
+		line-height: 17px;
+	}
 }
