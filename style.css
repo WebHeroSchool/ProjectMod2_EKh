@@ -34,35 +34,44 @@ a:hover {
 }
 
 .header__img {	
-	height: 55px;
 	margin: 0 45px 0 0;
 }
-.header__logo {}
+.header__logo {
+	height: 55px;
+	width: 55px;
+}
+
 .header__logo-mobile {display: none;}
 
-nav a, .header__link {
-	margin-right: 35px;
-	line-height: 11px;
+nav a {
+	margin-right: 32px;
 }
 
 .header__conteiner_right {justify-content: flex-end;}
 
 .search {
-	border-bottom: 1px solid #000000;
-	margin-right: 35px;
+	border-bottom: 2px solid #000000;
+	margin-right: 37px;
+	width: 177px;
 }
 
-.search__form {width: 164px;}
+.search-form {
+	width: 157px;
+	padding: 10px 0 0 0;
+}
 
-.header__link {vertical-align: middle;}
+.header__link {
+	vertical-align: middle;
+	margin-right: 35px;
+}
 
 .header__number::after {
 	content: counter(number);
 	counter-increment: number 1;
 	background: #000000;
 	display: inline-block;
-	width: 15px;
-	height: 15px;
+	width: 14px;
+	height: 14px;
 	color: white;
 	font-size: 10px;
 	border-radius: 50%;
@@ -112,7 +121,6 @@ nav a, .header__link {
 	height: 280px;
 	margin: 0 0 54px 0;
 	background-repeat: no-repeat;
-	background-size: contain;
 	display: flex;
 }
 
@@ -121,10 +129,9 @@ nav a, .header__link {
 	font-weight: bold;
 	text-transform: uppercase;
 	width: 255px;
-	padding-left: 60px;
+	padding: 89px 0 0 60px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 }
 
 .main-screen__title {
@@ -194,8 +201,9 @@ nav a, .header__link {
 }
 
 .goods__item {
-	padding: 0 12px 20px;
+	padding: 0 0 20px 12px;
 	height: 261px;
+	width: 230px;
 	position: relative;
 }
 
@@ -206,13 +214,14 @@ nav a, .header__link {
 	width: 0;
 	height: 101px;
 	border: 1px;
-	margin: 40px 0 0 -40px;
+	margin: 42px 0 0 -30px;
 }
 
-.goods__img {margin: 0 0 24px 0;}
+.goods__img {margin: 0 0 28px 10px;}
+
 .goods__name {
 	font-size: 12px;
-	margin: 0 0 5px 0;
+	margin: 0 0 3px 0;
 }
 
 .goods__details {
@@ -332,7 +341,7 @@ nav a, .header__link {
 	margin: 0 0 80px 0;
 	height: 494px;
 	background: #000000;
-	padding: 75px 45px 75px 41px;
+	padding: 67px 45px 66px 33px;
 	display: flex;
 }
 
@@ -340,7 +349,7 @@ nav a, .header__link {
 	border: 8px;
 	display: block;
 	flex: 1 1 70%;
-	padding: 0 50px 0 0;
+	margin: 0 42px 0 0;
 }
 
 .brand-info__text{
@@ -348,11 +357,11 @@ nav a, .header__link {
 	flex: 0 1 30%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	padding: 87px 0 0 0;
 }
 
 .brand-info__history {
-	margin: 0 0 10px 0;
+	margin: 0 0 22px 0;
 	line-height: 17px;
 }
 
