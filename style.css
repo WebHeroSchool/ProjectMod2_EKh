@@ -24,7 +24,7 @@ a:hover {
 	font-weight: bold;
 	display: flex;
 	justify-content: space-between;
-	margin: 0 0 28.5px 0;
+	margin: 0 0 29px 0;
 }
 
 .header__conteiner {
@@ -83,7 +83,7 @@ nav a {
 
 @media (max-width: 769px) {
 	.header {
-		padding: 10px 44px 8px 43px;
+		padding: 8px 44px 6px 43px;
 	}
 
 	.nav, .header__conteiner_right {display: none;}
@@ -95,14 +95,23 @@ nav a {
   	margin: 0 0 8px 0;
 	}
 
-	.burger {display: block;}
+	.burger {
+		display: block;
+		padding: 4px 0 0 0;
+	 }
+
 	.header__logo {display: none;}
 	.header__logo-mobile {display: block;}
 }
 
 @media (max-width: 376px) {
+	body {
+		padding: 24px 0;
+	}
+
 	.header {
-		margin: 0 47px;
+		padding: 0 47px;
+		margin: 0 0 26px 0;
 		max-height: 72px;
 	}
 	
@@ -160,17 +169,19 @@ nav a {
 
 	.main-screen__container {
 		width: 350px;
-		padding: 115px 0 0 44px;
+		padding: 120px 0 0 44px;
 	}
 
 	.main-screen__title {
 		font-size: 50px;
-		margin-bottom: 46px;
+		line-height: 48px;
+		margin-bottom: 48px;
 	}
 
 	.main-screen__link {font-size: 20px;}
 
 	.main-screen__link::after {
+		content: url('Image_Axion/Vector/Arrow (white 768).png');
 		width: 71px;
 		margin-left: 10px;
 	}
@@ -178,20 +189,29 @@ nav a {
 
 @media (max-width: 376px) {
 	.main-screen {
+		background-image: url(Image_Axion/Photo/rob-potter-422534-unsplash_mobil_375.png);
 		height: 191px;
 		margin: 0 0 38px 0;
 	}
 
 	.main-screen__container {
-		padding-left: 48px;
+		padding: 62px 0 0 48px;
+		width: 180px;
 	}
 
 	.main-screen__title {
 		font-size: 20px;
-		margin-bottom: 10px;
+		line-height: 19px;
+		margin-bottom: 20px;
 	}
 
 	.main-screen__link {font-size: 12px;}
+
+	.main-screen__link::after {
+		content: url('Image_Axion/Vector/Arrow (1).png');
+		width: 45px;
+		margin-left: 6.29px;
+	}
 }
 /*MAIN section class='goods-list'*/
 
@@ -238,7 +258,7 @@ nav a {
 	display: flex;
 	justify-content: space-between;
 	height: 24px;
-	align-items: center
+	align-items: center;
 }
 
 .goods__price {font-weight: bold;}
@@ -268,11 +288,11 @@ nav a {
 .goods__color_blue {background: #257DA9;}
 
 @media (max-width: 769px) {
-	.goods-list {margin: 0 0 87px 0;}
+	.goods-list {margin: 0 0 78px 0;}
 
 	.content__title {
 		font-size: 30px;
-		margin: 0 0 18px 0;
+		margin: 0 0 20px 0;
 	}
 	
 	.goods {padding: 0 70px;}
@@ -286,13 +306,14 @@ nav a {
 	.goods__item:nth-last-child(1), .goods__item:nth-last-child(2) {display: none;}
 
 	.goods__img {
-		height: 233px;
-		width: 229px;
+		height: 225px;
+		width: 230px;
+		margin: 7px 0 28px 10px;
 	}
 
 	.goods__name {
 		font-size: 20px;
-		margin: 0 0 9px 0;
+		margin: 0 0 10px 0;
 	}
 
 	.goods__details {
@@ -315,24 +336,27 @@ nav a {
 }
 
 @media (max-width: 376px) {
-	.goods-list {margin: 0 47px 80px 47px;}
+	.goods-list {margin: 0 0 100px 0;}
 
 	.content__title {
 		font-size: 20px;
 		margin: 0;
 	}
+
+	.goods {padding: 0 46px;}
 	
 	.goods__item {
-		height: 248px;
+		height: 235px;
 		width: 281px;
-		padding: 0 0 0 14px;		
+		padding: 0 0 0 15px;
 	}
 
 	.goods__item:nth-last-child(3) {display: none;}
 
 	.goods__img {
 		height: 165px;
-		padding:0 50px 0;
+		width: 165px;
+		margin: 0 0 22px 46px;
 	}
 
 	.goods__name {
@@ -402,31 +426,32 @@ nav a {
 	.brand-info {
 		position: relative;
 		flex-direction: column-reverse;
-		padding: 0 40px 100px 40px;
+		padding: 0 38px 80px 37px;
 		height: 650px;
 	}
 
 	.brand-info:before {
 	  content: "";
 	  background: #000000;
-	  transform: rotate(2.6deg);
+	  transform: skewY(2.6deg);
 	  position: absolute;
-	  width: 200%;
+	  width: 100%;
 	  height: 100%;
-	  left: -20%;
 	  top: -7%;
+	  left: 0;
 	  z-index: -1;
+	  overflow-x: hidden;
 	}
 
 	.brand-info__image {
 		margin: 0;
-		height: 370px;
+		height: 390px;
 		flex: 0 1 auto;
 	}
 
 	.brand-info__text {
+		margin: 0 0 30px 0;
 		padding: 0;
-		margin: 20px 0 20px 0;
 		flex: 0 1 auto;
 		align-items: center;
 	}
@@ -438,6 +463,7 @@ nav a {
 
 	.brand-info__history {
 		text-align: center;
+		margin: 0;
 		font-size: 20px;
 		line-height: 25px;
 	}
@@ -447,14 +473,8 @@ nav a {
 
 @media (max-width: 376px) {
 	.brand-info {
-		padding: 10px 45px 50px 45px;
-		height: 400px;
-	}
-
-	.brand-info:before {
-	  content: "";
-	  width: 110%;
-	  left: -5%;
+		padding: 0 45px 30px 45px;
+		height: 375px;
 	}
 
 	.brand-info__image {
@@ -464,11 +484,12 @@ nav a {
 		flex: 0 1 auto;
 	}
 
-	.brand-info__text {padding: 0 0 20px 0;}
+	.brand-info__text {margin: 0 0 30px 0;}
 
 	.brand-info__title {
 		line-height: 25px;
 		margin-bottom: 15px;
+		padding: 0 30px;
 	}
 
 	.brand-info__history {
@@ -601,4 +622,13 @@ nav a {
 
 .info:last-of-type .info__title {
 	margin: 0 0 6px 0;
+}
+
+
+
+
+@media (max-width: 376px) {
+	.footer__links {
+		flex-direction: column;
+	}
 }
