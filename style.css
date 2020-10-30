@@ -1,53 +1,48 @@
 body {
-	font-family: 'Gotham Pro';
-	font-size: 14px;
-	max-width: 1030px;
-	min-width: 320px;
-	margin: 0 auto;
-	padding: 32.46px 0;
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 14px;
+  max-width: 1030px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 32.46px 0;
 }
 
 a {
-	text-decoration: none;
-	color: #000000;
-	text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
 }
 
-a:hover {
-	opacity: .5;
-}
-
-/*<header class='header'>*/
+/* <header class='header'>*/
 .header {
-	color: #000000;
-	font-size: 12px;
-	font-weight: bold;
-	display: flex;
-	justify-content: space-between;
-	margin: 0 0 29px 0;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 29px 0;
 }
 
 .header__conteiner {
-	flex: 0 1 50%;
-	display: flex;
-	align-items: center;
+  flex: 0 1 50%;
+  display: flex;
+  align-items: center;
 }
 
-.header__img {	
-	margin: 0 45px 0 0;
-}
+.header__img {margin: 0 45px 0 0; }
+
 .header__logo {
 	height: 55px;
 	width: 55px;
 }
 
-.header__logo-mobile {display: none;}
+.header__logo-mobile {display: none; }
 
-nav a {
-	margin-right: 32px;
-}
+nav a {margin-right: 32px; }
 
-.header__conteiner_right {justify-content: flex-end;}
+a:hover {opacity: .5; }
+
+.header__conteiner_right {justify-content: flex-end; }
 
 .search {
 	border-bottom: 2px solid #000000;
@@ -56,8 +51,8 @@ nav a {
 }
 
 .search-form {
-	width: 157px;
-	padding: 10px 0 0 0;
+  width: 157px;
+  padding: 10px 0 0 0;
 }
 
 .header__link {
@@ -81,9 +76,29 @@ nav a {
 
 .burger {display: none;}
 
+@media (max-width: 1025px) {
+	body {max-width: 930px; }
+
+	.header {margin: 0 0 43px 0; }
+
+	.header__img {margin: 0 29px 0 0; }
+
+	.header__logo {width: 61px; }
+
+	.search {
+		margin-right: 33px;
+		width: 164px;
+	}
+
+	.search-form {width: 146px; }
+
+	.header__link {margin-right: 25px; }
+}
+
 @media (max-width: 769px) {
 	.header {
 		padding: 8px 44px 6px 43px;
+		margin: 0 0 29px 0;
 	}
 
 	.nav, .header__conteiner_right {display: none;}
@@ -111,7 +126,7 @@ nav a {
 
 	.header {
 		padding: 0 47px;
-		margin: 0 0 26px 0;
+		margin: 0 0 25px 0;
 		max-height: 72px;
 	}
 	
@@ -158,6 +173,23 @@ nav a {
 	display: inline-block;
 	width: 42.83px;
 	margin-left: 6.29px;
+}
+
+@media (max-width: 1025px) {
+	.main-screen {
+		height: 253px;
+		margin: 0 0 65px 0;
+		background-size: cover;
+	}
+
+	.main-screen__container {
+		width: 262px;
+		padding: 75px 0 0 54px;
+	}
+
+	.main-screen__title {margin-bottom: 9px; }
+
+	.main-screen__link::after {margin-left: 10px; }
 }
 
 @media (max-width: 769px) {
@@ -287,6 +319,18 @@ nav a {
 .goods__color_orange {background: #E29D69;}
 .goods__color_blue {background: #257DA9;}
 
+@media (max-width: 1025px) {
+	.goods-list {margin: 0 0 45px 0; }
+	
+	.content__title {margin: 0 0 25px 0; }
+
+	.goods__item {width: 208px; }
+
+	.goods__img {
+		margin: 0 0 35px 10px;
+		width: 170px;}
+}
+
 @media (max-width: 769px) {
 	.goods-list {margin: 0 0 78px 0;}
 
@@ -338,9 +382,9 @@ nav a {
 @media (max-width: 376px) {
 	.goods-list {margin: 0 0 100px 0;}
 
-	.content__title {
-		font-size: 20px;
-		margin: 0;
+  .content__title {
+	  font-size: 20px;
+	  margin: 0;
 	}
 
 	.goods {padding: 0 46px;}
@@ -369,10 +413,10 @@ nav a {
 		font-size: 20px;
 	}
 
-	.goods__color, .goods__color_active {
-		width: 15px;
-		height: 15px;
-		margin-right: 5px;
+  .goods__color, .goods__color_active {
+    width: 15px;
+	  height: 15px;
+	  margin-right: 5px;
 	}
 }
 
@@ -422,6 +466,38 @@ nav a {
 	margin-left: 8.91px;
 }
 
+@media (max-width: 1025px) {
+	.brand-info {
+		margin: 0 0 95px 0;
+		height: 442px;
+		padding: 59px 34px 58px 30px;
+	}
+
+	.brand-info__image {
+		flex: 0 1 auto;
+		height: 325px;
+		margin: 0 39px 0 0;
+	}
+
+	.brand-info__text{
+		flex: 0 1 auto;
+		padding: 76px 0 0 0;
+	}
+
+	.brand-info__title {
+		line-height: 27px;
+		margin: 0 0 8px 0;
+	}
+
+	.brand-info__history {
+		margin: 0 0 17px 0;
+		line-height: 16px;
+		font-size: 13px;
+	}
+
+	.brand-info__link::after {margin-left: 11px; }
+}
+
 @media (max-width: 768px) {
 	.brand-info {
 		position: relative;
@@ -457,6 +533,7 @@ nav a {
 	}
 
 	.brand-info__title {
+		margin: 0 0 20px 0;
 		line-height: 27px;
 		text-align: center;
 }
