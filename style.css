@@ -139,6 +139,11 @@ a:hover {opacity: .5; }
 	.header__logo-mobile {height: 22px;}
 }
 
+@media (max-width: 321px) {
+	.header {
+		padding: 0 20px;
+	}
+}
 /*MAIN <section class='main-screen'>*/
 .main-screen {
 	background-image: url(Image_Axion/Photo/rob-potter-422534-unsplash.png);
@@ -243,6 +248,16 @@ a:hover {opacity: .5; }
 		content: url('Image_Axion/Vector/Arrow (1).png');
 		width: 45px;
 		margin-left: 6.29px;
+	}
+}
+
+@media (max-width: 321px) {
+	.main-screen {
+		background-position: -28px, 0;
+	}
+
+	.main-screen__container {
+		padding: 62px 0 0 20px;
 	}
 }
 /*MAIN section class='goods-list'*/
@@ -399,7 +414,7 @@ a:hover {opacity: .5; }
 
 	.goods__img {
 		height: 165px;
-		width: 165px;
+		width: 163px;
 		margin: 0 0 22px 46px;
 	}
 
@@ -418,6 +433,11 @@ a:hover {opacity: .5; }
 	  height: 15px;
 	  margin-right: 5px;
 	}
+}
+
+@media (max-width: 321px) {
+	.goods-list {margin: 0 0 100px 0;}
+	.goods {padding: 0 20px;}
 }
 
 /*MAIN <section class='brand-info'>*/
@@ -522,7 +542,6 @@ a:hover {opacity: .5; }
 	.brand-info__image {
 		margin: 0;
 		height: 390px;
-		flex: 0 1 auto;
 	}
 
 	.brand-info__text {
@@ -557,8 +576,6 @@ a:hover {opacity: .5; }
 	.brand-info__image {
 		padding: 0;
 		height: 151px;
-		border: 4px;
-		flex: 0 1 auto;
 	}
 
 	.brand-info__text {margin: 0 0 30px 0;}
@@ -573,6 +590,10 @@ a:hover {opacity: .5; }
 		font-size: 14px;
 		line-height: 17px;
 	}
+}
+
+@media (max-width: 321px) {
+	.brand-info {padding: 0 16px 30px 16px; }
 }
 /*MAIN <section class='stories'>*/
 .stories {margin: 0 0 82px 0;}
